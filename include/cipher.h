@@ -15,4 +15,4 @@ void ProcessCipher(int cipherType, int operation, int source);
 }
 #endif
 
-#endif // CIPHER_H
+#endif 
