@@ -3,10 +3,11 @@
 
 #include <vector>
 #include <string>
+using namespace std;
 
-std::vector<unsigned char> BaconEncrypt(const std::vector<unsigned char>& secretData, 
-                                      const std::vector<unsigned char>& decoyData);
+vector<unsigned char> BaconEncrypt(const vector<unsigned char>& secretData, 
+                                      const vector<unsigned char>& decoyData);
 
-std::vector<unsigned char> BaconDecrypt(const std::vector<unsigned char>& encryptedData);
+vector<unsigned char> BaconDecrypt(const vector<unsigned char>& encryptedData);
 
 #endif
