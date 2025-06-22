@@ -8,22 +8,22 @@
 
 class BinaryTrisemus {
 private:
-    std::string key;
-    std::vector<std::vector<unsigned char>> table;
-    std::unordered_map<unsigned char, std::pair<int, int>> charMap;
+    string key;
+    vector<vector<unsigned char>> table;
+    unordered_map<unsigned char, pair<int, int>> charMap;
     int rows = 16;
     int cols = 16;
 
     void buildTable();
 
 public:
-    explicit BinaryTrisemus(const std::string& k);
+    explicit BinaryTrisemus(const string& k);
     
-    void encryptData(const std::vector<unsigned char>& data, 
-                   const std::string& outputFile);
+    void encryptData(const vector<unsigned char>& data, 
+                   const string& outputFile);
     
-    void decryptData(const std::vector<unsigned char>& data,
-                   const std::string& outputFile);
+    void decryptData(const vector<unsigned char>& data,
+                   const string& outputFile);
 };
 
-#endif // TRISEMUS_H
+#endif 
