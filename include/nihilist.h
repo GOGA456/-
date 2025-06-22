@@ -3,16 +3,17 @@
 
 #include <vector>
 #include <string>
+using namespace std;
 
 class NihilistCipher {
 public:
-    void encryptData(const std::vector<unsigned char>& data, 
-                   const std::string& key, 
-                   const std::string& outputFile);
+    void encryptData(const vector<unsigned char>& data, 
+                   const string& key, 
+                   const string& outputFile);
     
-    void decryptData(const std::vector<unsigned char>& data,
-                   const std::string& key,
-                   const std::string& outputFile);
+    void decryptData(const vector<unsigned char>& data,
+                   const string& key,
+                   const string& outputFile);
 };
 
-#endif // NIHILIST_H
+#endif 
